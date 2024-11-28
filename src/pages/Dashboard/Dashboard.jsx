@@ -2,7 +2,7 @@ import * as React from "react";
 import { StockCard } from "../../components/StockCard";
 import { NewsCard } from "../../components/NewsCard";
 import WatchlistItem from "../../components/WatchlistItem";
-import Tab from "../../components/tabs";
+import Tabs from "../../components/tabs";
 import ExchangeTab from "../../components/ExchangeTab";
 import { useTheme } from "../../context/ThemeContext";
 import ToggleTheme from "../../components/Toggle";
@@ -77,7 +77,7 @@ export default function Dashboard() {
                             className={`flex flex-col w-full max-md:px-5 max-md:pb-24 max-md:max-w-full ${theme.border}`}
                         >
                             <nav className={`p-5 max-w-full ${theme.container}`}>
-                                <Tab />
+                                <Tabs />
                                 <ExchangeTab />
                             </nav>
                         </section>
