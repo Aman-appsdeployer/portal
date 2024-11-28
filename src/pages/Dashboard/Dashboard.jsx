@@ -2,12 +2,10 @@ import * as React from "react";
 import { StockCard } from "../../components/StockCard";
 import { NewsCard } from "../../components/NewsCard";
 import WatchlistItem from "../../components/WatchlistItem";
-import Tabs from "../../components/tabs";
 import ExchangeTab from "../../components/ExchangeTab";
 import { useTheme } from "../../context/ThemeContext";
 import ToggleTheme from "../../components/Toggle";
-
-;
+import Tabs from "../../components/tabs";
 
 const stockData = [
     { name: "Cipla Ltd", price: "₹239.00", change: "+9.10", percentage: "3.63", logo: "https://cdn.builder.io/api/v1/image/assets/TEMP/42a275e82ff9de8fe58a85cfa071e85395342491eb8de350c2e3aa70b3aad583?placeholderIfAbsent=true&apiKey=90b7ff433fe24aa1a96e688cb0ab4bd9", icon: "https://cdn.builder.io/api/v1/image/assets/TEMP/ef3236ebd5a058f51345f09eb6c84fc2e385bd31705b344b368c4d82d4e44e84?placeholderIfAbsent=true&apiKey=90b7ff433fe24aa1a96e688cb0ab4bd9" },

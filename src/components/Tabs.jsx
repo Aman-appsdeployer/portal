@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import   { useTheme }  from "../context/ThemeContext";
 
-const Tab = ({ setTypeTop, typeTop }) => {
+const Tabs = ({ setTypeTop, typeTop }) => {
     const { isDarkMode, toggleTheme, theme } = useTheme()
 
     const [activeLeft, setActiveLeft] = useState(0);
@@ -73,4 +73,4 @@ const Tab = ({ setTypeTop, typeTop }) => {
     );
 };
 
-export default Tab;
+export default Tabs;
